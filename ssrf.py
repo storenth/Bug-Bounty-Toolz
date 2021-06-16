@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 # m4ll0k - github.com/m4ll0k
+# storenth - github.com/storenth
 
 import requests
 import urllib3
@@ -82,7 +83,7 @@ def main(url:str,ip:str):
         print('url={url} \theaders={headers}\n'.format(url=url, headers=request.request.headers))
     except Exception as err:
         sys.exit(
-            print('[ERROR] '+err)
+            print('[ERROR] {}'.format(err))
         )
 
 def usage():
